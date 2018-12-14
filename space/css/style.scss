@@ -1,0 +1,212 @@
+body{
+    background-image: url('../images/space-1.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+.navbar-brand{
+    display: "inline";
+    span{
+        font-size: 40px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        transform: translateY(-8px);
+    }
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.main-button{
+    a{
+        font-size: 30px;
+        font-family: 'Comic Sans MS';
+    }
+}
+.nav-item{
+    font-size: 20px;
+}
+.row-content{
+    .card{
+        background-color: transparent;
+        border-color: white;
+    }
+}
+.planet{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    overflow:hidden;
+    cursor: pointer;
+    box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+    .mask{
+        width:100%;
+        height:100%;
+        box-shadow:inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+        border-radius:50%;
+    }
+    .wrap{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        animation: rotate_2 150s infinite linear;
+        .clouds{
+            background:url('../images/clouds.png') repeat-x;
+            background-size: cover;
+            width:300px;
+            height:300px;
+            position:absolute;
+            border-radius:50%;
+            animation: rotate_1 30s infinite linear;
+            opacity: 0.4;
+        }
+    }
+}
+#earth{
+    background: url('../images/earth_high.jpg') repeat-x;
+    background-size: cover;
+    animation: rotate_1 30s infinite linear;
+    margin-top: 70%;
+    width: 150px;
+    height: 150px;
+    .wrap{
+        width: 150px;
+        height: 150px;
+        .clouds{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}#proxima{
+    background: url('../images/proxima.jpg') repeat-x;
+    background-size: cover;
+    animation: rotate_3 30s infinite linear;
+    margin-top: 40%;
+    .clouds{
+        animation: rotate_3 30s infinite linear;
+    }
+}#kepler-452{
+    background: url('../images/kepler.jpg') repeat-x;
+    background-size: cover;
+    animation: rotate_4 30s infinite linear;
+    width: 200px;
+    height: 200px;
+    margin-top: 50%;
+    .wrap{
+        width: 200px;
+        height: 200px;
+        .clouds{
+            width: 200px;
+            height: 200px;
+            animation: rotate_4 30s infinite linear;
+        }
+    }
+}
+.popover{
+    background-color: transparent;
+}
+@media(max-width: 768px){
+    body{
+        overflow: scroll;
+    }
+    .navbar-brand{
+        display: 'block';
+        span{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    .main-button{
+        a{
+            font-size: 20px;
+        }
+    }
+    .planet{
+        height: 200px;
+        width: 200px;
+        .wrap{
+            height: 200px;
+            width: 200px;
+            .clouds{
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+    #earth{
+        height: 100px;
+        width: 100px;
+        .wrap{
+            height: 100px;
+            width: 100px;
+            .clouds{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+    #kepler-452{
+        height: 150px;
+        width: 150px;
+        float: right;
+        .wrap{
+            height: 150px;
+            width: 150px;
+            .clouds{
+                height: 150px;
+                width: 150px;
+            }
+        }
+    }
+    #earth, #proxima, #kepler-452{
+        margin-top: 0;
+    }
+    @keyframes rotate_1{
+        0%{
+          background-position-x:0;
+        }
+        100%{
+          background-position-x:-200px;
+        }
+    }
+}
+@media(min-width: 768px){
+    #homeCarousel{
+        transform: translateX(-50px);
+    }
+    #earth, #proxima, #kepler-452{
+        float: left;
+    }
+}
+@keyframes rotate_1{
+    0%{
+      background-position-x:0;
+    }
+    100%{
+      background-position-x:-600px;
+    }
+}
+@keyframes rotate_2{
+    0%{
+      transform:rotateZ(0);
+    }
+    100%{
+      transform:rotateZ(-360deg);
+    }
+}
+@keyframes rotate_3{
+    0%{
+      background-position-x:0;
+    }
+    100%{
+      background-position-x:-200px;
+    }
+}
+@keyframes rotate_4{
+    0%{
+      background-position-x:0;
+    }
+    100%{
+      background-position-x:-400px;
+    }
+}

@@ -1,0 +1,94 @@
+body {
+    background-image: url("../images/15621.png");
+    background-size: cover;
+    /* overflow: hidden;  */
+}
+
+.navbar-brand {
+    display: "inline"; }
+.navbar-brand span {
+    font-size: 40px;
+    font-family: comic sans ms;  }
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-8px); }
+
+nav {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.head  {
+    font-size:220%;
+    font-family:comic sans ms;
+    background-color:rgba(211, 211, 211, 0.702);
+    width: 40%;
+    padding: 1%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.intro-1  {
+    background-color: rgba(138, 139, 212, 0.714);
+    width:30%;
+    float:left;
+    border-radius:10px;
+    margin: 4% 2% 0%;
+    padding: 1%;  }
+.image-1  {
+    background-image:url(../images/pic1.jpg);
+    background-size:cover;
+    border-radius:25%;
+    width:25%;
+    height:100px;
+    display: inline-block;  }
+#para  {
+    color:white;
+    font-size: 125%;
+    float: right;
+    margin-top: 4%;
+    width: 65%;  }
+.card {
+    background-color: rgba(138, 139, 212, 0.514);
+    border: 3px solid #3E75BF;
+    border-radius: 40px;
+    float:right;
+    margin-right: 5%;
+    margin-top: 4%;
+    width: 45%;
+    font-family: Comic Sans MS;
+    font-size: 115%;  }
+.intro-2  {
+    background-color: rgba(138, 139, 212, 0.714);
+    width:30%;
+    float:left;
+    border-radius:10px;
+    margin: 2% 2% 0%;
+    padding: 1.7%;  }
+.image-2  {
+    background-image:url(../images/pic2.jpg);
+    background-size:cover;
+    border-radius:25%;
+    width:25%;
+    height:100px;
+    display: inline-block;  }
+.foot  {
+    font-size:160%;
+    font-family:comic sans ms;
+    background-color:rgba(211, 211, 211, 0.702);
+    width: 20%;
+    padding-left: 1%;
+    padding-top: 0.4%;
+    padding-bottom: 0.1%;
+    border-radius: 5px;
+    float: initial;
+    margin: 30% 20% 0%;
+}
+.email  {
+    float: right;
+    font-size: 115%;
+    margin-right: 28%;
+    background-color:rgba(182, 55, 133, 0.702);
+    width: 25%;
+    padding-left: 1%;
+    padding-top: .5%;
+    border-radius: 10px;
+}
